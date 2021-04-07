@@ -1,0 +1,122 @@
+.indexLetter {
+    color: orange
+}
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus {
+    background-color: #faac25
+}
+
+.navbar-nav>li a {
+    font-size: 18px;
+}
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    background-color: #faac25;
+}
+
+.carousel-indicators li.active {
+    background-color: orange
+}
+
+.thumbnail .over-lay .square {
+    color: #faac25;
+}
+
+.thumbnail .item:hover {
+    border: 4px solid #faac25;
+}
+
+.thumbnail .item:hover .over-lay .square {
+    border: 1px solid #faac25;
+}
+
+.thumbnail .item:hover .over-lay .square a {
+    color: #faac25;
+}
+
+.thumbnail .item .over-lay .square:hover a {
+    color: white;
+}
+
+.thumbnail .item .over-lay .square:hover {
+    border-color: white
+}
+
+.border-before,
+.border-after {
+    background-color: #faac25;
+}
+
+.border-bottom {
+    background-color: #faac25;
+}
+
+.testimonials span {
+    color: #faac25;
+}
+
+.ContactUs i {
+    color: orange;
+}
+
+.border {
+    background-color: orange;
+}
+
+.social .row>div>a.icon {
+    border: 1px solid orange;
+    color: #faac25;
+}
+
+.social .row>div>a.icon i {
+    color: orange;
+}
+
+.social .row>div:hover a span {
+    color: orange;
+}
+
+.Gallery .thumbnail .over-lay .square:hover {
+    background-color: orange;
+}
+
+.ourStory .undoBackground {
+    background: repeating-linear-gradient( 45deg, orangered, orange 200px);
+}
+
+.ourStory .carousel-indicators li,
+.ourStory .carousel-indicators li.active {
+    border: 2px solid orange;
+}
+
+.ourStory .carousel-indicators li.active {
+    background-color: transparent;
+    border: 1px solid #676767
+}
+
+.breadcrumb {
+    background-color: #faac25
+}
+
+.collection {
+    color: orange
+}
+
+.page:last-child {
+    background: #faac25;
+}
+
+.clipping {
+    background: orangered;
+}
+
+.scroll-to-top {
+    background-color: #faac25;
+}
+
+.optionbox .fa-palette {
+    color: orange;
+}

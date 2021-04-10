@@ -29,11 +29,14 @@ $(document).ready(function() {
     $('.coloroption ul li').eq(2).css("backgroundColor", "#5bc0de");
     $('.coloroption ul li').eq(3).css("backgroundColor", "#d9534f");
 
-    var colorLi = $('.coloroption ul li');
+    let colorLi = $('.coloroption ul li');
 
     colorLi.click(function() {
 
-        $('link[href*="heme"]').attr('href', $(this).attr('data-value'));
+        $('link[href*="Theme"]').attr('href', $(this).attr('data-value'));
+
+        $('.navbar-header img').attr('src', $(this).attr('data-img'));
+
     });
 
 
@@ -51,9 +54,19 @@ $(document).ready(function() {
     });
 
     scrollButton.click(function() {
-        $('html,body').animate({ scrollTop: 0 }, 2000);
+        $('html,body').animate({ scrollTop: 0 }, 1000);
     });
 
+
+
+    $('.serv a').click(function(e) {
+        e.preventDefault();
+        $('html,body').animate({ scrollTop: 750 }, 1000);
+    });
+
+    $('.products a').click(function(e) {
+        e.preventDefault();
+    })
 
 
     //loading screen
@@ -62,9 +75,9 @@ $(document).ready(function() {
 
         $('body').css({ "overflow": "auto" });
 
-        $('.scissors').fadeOut(200, function() {
+        $('.scissors').fadeOut(10, function() {
 
-            $(this).parent().fadeOut(300, function() {
+            $(this).parent().fadeOut(5, function() {
                 $(this).remove()
             })
 
@@ -73,5 +86,44 @@ $(document).ready(function() {
     });
 
 
+    $('.BlogDetail .category i').on('click', function() {
 
-});
+        $(this).toggleClass('fa-caret-right').parents($('li')).siblings().find($('span.contain i')).addClass('fa-caret-right');
+        $(this).parents($('span.contain')).next($('span.div')).toggleClass('active').parent().siblings().find($('span.div')).removeClass('active')
+
+    });
+
+    $('.BlogDetail .category .categoryWord').on('click', function() {
+
+        $(this).parents($('span.contain')).next($('span.div')).toggleClass('active').parent().siblings().find($('span.div')).removeClass('active');
+        $(this).prev($('i')).toggleClass('fa-caret-right').parents($('li')).siblings().find($('span.contain i')).addClass('fa-caret-right');
+
+
+    });
+
+
+
+    $('.pop .square a').on('click', function(e) {
+        $('.' + $(this).parent().data('pop')).fadeIn(500);
+        e.stopPropagation();
+        e.preventDefault();
+
+    });
+
+    $('.popup').on('click', function(e) {
+        e.stopPropagation();
+        $(this).fadeOut(500);
+
+    });
+
+    $('.popup .inner').on('click', function(e) {
+        e.stopPropagation();
+    });
+
+    $('.popup .close').on('click', function(e) {
+        e.preventDefault();
+        $(this).parentsUntil('.popup').parent().fadeOut(500);
+    });
+
+
+})

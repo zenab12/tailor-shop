@@ -25,7 +25,7 @@
     color: #faac25;
 }
 
-.thumbnail .item:hover {
+.services .thumbnail .item:hover {
     border: 4px solid #faac25;
 }
 
@@ -106,11 +106,11 @@
 }
 
 .page:last-child {
-    background: #faac25;
+    background: linear-gradient(to right bottom, orange, orangered)
 }
 
 .clipping {
-    background: orangered;
+    background: repeating-linear-gradient(to left, rgb(248, 246, 242), rgb(135, 118, 87) 10px, rgb(238, 129, 89) 10px);
 }
 
 .scroll-to-top {
@@ -119,4 +119,108 @@
 
 .optionbox .fa-palette {
     color: orange;
+}
+
+.social .row ul li:hover a {
+    border-color: #faac25;
+    background: #faac25;
+}
+
+.BlogDetail .aside .category li i {
+    color: #faac25;
+}
+
+.BlogDetail .aside .category h3 {
+    color: #faac25
+}
+
+.BlogDetail .tags .tag,
+.social.tagIcons .row ul li a.icon {
+    border: 2px solid rgb(250, 187, 158);
+    color: #faac25
+}
+
+.BlogDetail .tags .tag:hover {
+    background-color: #faac25
+}
+
+.BlogDetail .tags .tag a,
+.BlogDetail .Detail a {
+    color: #faac25
+}
+
+.BlogDetail .Detail h2 {
+    background: repeating-linear-gradient(to bottom, #faac25, orangered, rgb(250, 187, 158) 50px);
+}
+
+.BlogDetail .Detail .imageDetail .admin {
+    color: #faac25
+}
+
+.BlogDetail .aside .category li {
+    border-color: #faac25
+}
+
+.latestPost {
+    color: #faac25
+}
+
+.tagIcons {
+    border-bottom: .5px solid #faac25
+}
+
+.BlogDetail li .div {
+    background: repeating-linear-gradient(to left bottom, #faac25, orangered 2px);
+}
+
+.social.tagIcons .row ul li:hover a.icon i {
+    color: #fff
+}
+
+.hvr-shutter-out-horizontal:before {
+    background-color: orange;
+}
+
+.breadcrumb {
+    background-color: orange
+}
+
+.popup .inner button {
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: orange;
+}
+
+.popup p {
+    color: orange;
+}
+
+.social li a:last-of-type:hover {
+    background-color: #fff;
+    color: orange;
+}
+
+.social .row ul li a.icon {
+    color: orange
+}
+
+.social .row ul li a.icon:hover i {
+    color: white
+}
+
+.social .row ul li:hover a:nth-of-type(2) {
+    color: orange;
+    background-color: white
+}
+
+.social .row ul li:hover a:first-of-type i {
+    color: white;
+}
+
+.services .thumbnail .item:hover {
+    border: 4px solid #faac25;
+}
+
+.social .row ul li a.icon {
+    border: 2px solid rgb(250, 187, 158);
 }
